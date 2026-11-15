@@ -1,0 +1,2160 @@
+{
+ "layout": "lattice",
+ "seed": 1,
+ "smoothed": true,
+ "prior_rmse": 10.90521240234375,
+ "rt_settings": "{\"sionna_rt\": \"2.2.0\", \"mitsuba\": \"3.9.1\", \"drjit\": \"1.5.0\", \"variant\": \"llvm_ad_mono_polarized\", \"threads\": 8, \"llvm\": \"/opt/homebrew/opt/llvm/lib/libLLVM.dylib\", \"city\": \"City\", \"city_name\": \"highrise\", \"seed\": 1, \"n_buildings\": 256, \"building_source\": \"raster_rectangles\", \"size_m\": 1000.0, \"cell_m\": 10.0, \"n_cells\": 100, \"altitudes\": [100.0, 150.0, 200.0, 250.0, 300.0], \"fc_ghz\": 2.0, \"samples_per_tx\": 100047514, \"chunk_sizes\": [25000000, 25007919, 25015838, 25023757], \"max_depth\": 3, \"los\": true, \"specular_reflection\": true, \"diffuse_reflection\": true, \"diffraction\": true, \"edge_diffraction\": false, \"diffraction_lit_region\": true, \"refraction\": false, \"rr_depth\": -1, \"wedge_hash_table\": 262144, \"wedge_hash_table_default\": 10000, \"per_tx\": true, \"materials\": {\"ground\": {\"itu_type\": \"medium_dry_ground\", \"thickness_m\": 1.0, \"scattering_coefficient\": 0.20000000298023224, \"xpd_coefficient\": 0.0, \"relative_permittivity\": 13.995494842529297, \"conductivity_S_per_m\": 0.10832955688238144, \"scattering_pattern\": \"LambertianPattern\"}, \"building\": {\"itu_type\": \"concrete\", \"thickness_m\": 0.30000001192092896, \"scattering_coefficient\": 0.30000001192092896, \"xpd_coefficient\": 0.0, \"relative_permittivity\": 5.239999771118164, \"conductivity_S_per_m\": 0.0794525146484375, \"scattering_pattern\": \"LambertianPattern\"}}, \"antenna\": {\"tx\": \"CALM composite: TR38.901 element x 8-el vertical AF, tilt 96.0 deg, azimuth-isotropic, V-pol\", \"rx\": \"isotropic (radio-map definition)\", \"pattern_max_err_db\": 0.024057767962020193}, \"convention\": \"PL_rt = -10 log10(path_gain) = path loss - G_tx(theta); index [b, l, i(x), j(y)], cell centres (i+0.5)*cell_m\", \"fill\": \"nearest valid cell (scipy distance_transform_edt) for path_gain == 0\", \"fill_fraction\": 0.009825714285714326, \"fill_fraction_outdoor\": 0.0005607455024742025, \"runtime_scene_load_s\": 0.07474875450134277, \"runtime_per_altitude_s\": [91.07966685295105, 87.96536493301392, 86.5302848815918, 86.78551602363586, 84.55357384681702], \"mechanisms\": \"full\", \"city_summary\": {\"name\": \"highrise\", \"size_m\": 1000.0, \"res_m\": 5.0, \"alpha\": 0.55, \"beta\": 250.0, \"gamma\": 22.0, \"hmax\": 260.0, \"p_tower\": 0.1, \"tower_mu\": 4.65, \"tower_sigma\": 0.42, \"n_bs\": 7, \"bs_height_offset\": 5.0, \"bs_min_height\": 25.0, \"seed\": 1, \"realised_alpha\": 0.5184, \"mean_building_height\": 37.09097671508789, \"p95_building_height\": 112.78376770019531, \"p99_building_height\": 221.67257690429688, \"max_building_height\": 260.0, \"mean_bs_height\": 39.18874740600586}}",
+ "valid_fraction": 0.9901742857142857,
+ "prior3gpp": {
+  "rmse": 10.962479266113366,
+  "mae": 7.840775587172735,
+  "bias": 1.1494577805049835,
+  "p90": 17.896234893798827,
+  "p99": 34.90034286499023
+ },
+ "kriging": {
+  "rmse": 9.036486524957603,
+  "mae": 5.9662564485965595,
+  "bias": -0.34557829547235197,
+  "p90": 14.244805508164568,
+  "p99": 32.110010135049144
+ },
+ "rf": {
+  "rmse": 4.734995782918039,
+  "mae": 3.0354628313153884,
+  "bias": 0.06559161494637293,
+  "p90": 7.504528939034772,
+  "p99": 16.201317922889565
+ },
+ "voxelcnn": {
+  "rmse": 7.626796875548976,
+  "mae": 5.240310773819212,
+  "bias": 0.6468443850562686,
+  "p90": 11.709843444824223,
+  "p99": 26.67481399536132
+ },
+ "pact_rm": {
+  "rmse": 4.1565438184591565,
+  "mae": 2.687250500149197,
+  "bias": -0.024689965626550098,
+  "p90": 6.661042022705079,
+  "p99": 13.873852233886716,
+  "picp": 0.9017460317460317,
+  "picp_lat": 0.9162222222222223,
+  "mpiw": 11.912001609802246
+ },
+ "U_prior": {
+  "rmse": 4.171179224623612,
+  "mae": 2.6960451804267036,
+  "bias": 0.027702455187600755,
+  "p90": 6.549725341796877,
+  "p99": 14.022672729492182
+ },
+ "U_noprior": {
+  "rmse": 4.3859179733568885,
+  "mae": 2.9121275151570636,
+  "bias": 0.03751025112091549,
+  "p90": 6.888629150390625,
+  "p99": 14.246976852416944
+ },
+ "rf_norm_cov": {
+  "picp": 0.9018412698412699,
+  "mpiw": 13.087003707885742
+ },
+ "control": {
+  "oracle": {
+   "n_admitted": 16,
+   "admitted_frac": 1.0,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 11,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 39.24,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.002531645569620253,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.041666666666666664
+    },
+    "8": {
+     "outage": 0.010126582278481013,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.06451612903225806
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0012757120253164558,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.999999999545859,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.168
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 16.0,
+   "per_corridor_risk_obs": [
+    0.006214488636363636,
+    0.0,
+    0.00016983695652173913,
+    0.0029296875,
+    0.0,
+    0.0,
+    0.0003662109375,
+    0.007975260416666666,
+    0.0,
+    0.0,
+    0.0008820564516129032,
+    0.0,
+    0.0005580357142857143,
+    0.0003551136363636364,
+    0.0,
+    0.0009765625
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.007975260416666666,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.003125,
+     "total_probes": 2048,
+     "mean_certified": 15.992,
+     "analytic_mean_certified": 15.994857531451725,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "prior_only": {
+   "n_admitted": 16,
+   "admitted_frac": 1.0,
+   "outage": 0.043037974683544304,
+   "worst_corridor_outage": 0.16666666666666666,
+   "false_admissions": 2,
+   "per_corridor_outage": [
+    0.0,
+    0.08571428571428572,
+    0.0,
+    0.0625,
+    0.0,
+    0.06896551724137931,
+    0.03125,
+    0.16666666666666666,
+    0.13636363636363635,
+    0.0,
+    0.03225806451612903,
+    0.0,
+    0.047619047619047616,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 6,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 39.24,
+   "future": {
+    "1": {
+     "outage": 0.043037974683544304,
+     "false_admissions": 2,
+     "worst_corridor_outage": 0.16666666666666666
+    },
+    "2": {
+     "outage": 0.04050632911392405,
+     "false_admissions": 2,
+     "worst_corridor_outage": 0.16666666666666666
+    },
+    "4": {
+     "outage": 0.053164556962025315,
+     "false_admissions": 3,
+     "worst_corridor_outage": 0.20833333333333334
+    },
+    "8": {
+     "outage": 0.06582278481012659,
+     "false_admissions": 4,
+     "worst_corridor_outage": 0.25
+    }
+   },
+   "audit": {
+    "risk_obs": 0.043898338607594935,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.6686484243405018,
+    "sampled_cert_rate": 0.711,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 5.505
+   },
+   "certified_frac": 0.711,
+   "deployed_corridors": 11.376,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.08883928571428572,
+    0.031419836956521736,
+    0.06103515625,
+    0.0,
+    0.06344288793103449,
+    0.025390625,
+    0.16520182291666666,
+    0.1356534090909091,
+    0.0,
+    0.026713709677419355,
+    0.0,
+    0.047619047619047616,
+    0.0,
+    0.0,
+    0.00625
+   ],
+   "false_admissions_obs": 2,
+   "worst_corridor_risk_obs": 0.16520182291666666,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.003125,
+     "total_probes": 2048,
+     "mean_certified": 9.56,
+     "analytic_mean_certified": 9.603160201675404,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "point": {
+   "n_admitted": 16,
+   "admitted_frac": 1.0,
+   "outage": 0.030379746835443037,
+   "worst_corridor_outage": 0.09523809523809523,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0,
+    0.09375,
+    0.0,
+    0.034482758620689655,
+    0.0625,
+    0.08333333333333333,
+    0.0,
+    0.0,
+    0.06451612903225806,
+    0.0,
+    0.09523809523809523,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 14,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 39.24,
+   "future": {
+    "1": {
+     "outage": 0.027848101265822784,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.09523809523809523
+    },
+    "2": {
+     "outage": 0.03291139240506329,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.09523809523809523
+    },
+    "4": {
+     "outage": 0.04050632911392405,
+     "false_admissions": 1,
+     "worst_corridor_outage": 0.16666666666666666
+    },
+    "8": {
+     "outage": 0.04556962025316456,
+     "false_admissions": 2,
+     "worst_corridor_outage": 0.16129032258064516
+    }
+   },
+   "audit": {
+    "risk_obs": 0.030656645569620253,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.9003408561136126,
+    "sampled_cert_rate": 0.895,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 3.906
+   },
+   "certified_frac": 0.895,
+   "deployed_corridors": 14.32,
+   "per_corridor_risk_obs": [
+    0.011896306818181818,
+    0.0,
+    0.04194972826086957,
+    0.0660400390625,
+    0.0,
+    0.04552801724137931,
+    0.06298828125,
+    0.061197916666666664,
+    0.0,
+    0.0,
+    0.05758568548387097,
+    0.0,
+    0.08854166666666667,
+    0.013671875,
+    0.0,
+    0.0009765625
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.08854166666666667,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.003125,
+     "total_probes": 2048,
+     "mean_certified": 10.073,
+     "analytic_mean_certified": 10.029911887929304,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "gaussian": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 8.781786165012322,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "conformal": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 7.695180634095737,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "conformal_norm": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 9.281301111887972,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "conformal_norm_corr": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 9.291313194557324,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "calm_pooled_power": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 9.281301111887972,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "point_pooled_power": {
+   "n_admitted": 16,
+   "admitted_frac": 1.0,
+   "outage": 0.030379746835443037,
+   "worst_corridor_outage": 0.09523809523809523,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0,
+    0.09375,
+    0.0,
+    0.034482758620689655,
+    0.0625,
+    0.08333333333333333,
+    0.0,
+    0.0,
+    0.06451612903225806,
+    0.0,
+    0.09523809523809523,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 11,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 39.24,
+   "future": {
+    "1": {
+     "outage": 0.027848101265822784,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.09523809523809523
+    },
+    "2": {
+     "outage": 0.03291139240506329,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.09523809523809523
+    },
+    "4": {
+     "outage": 0.04050632911392405,
+     "false_admissions": 1,
+     "worst_corridor_outage": 0.16666666666666666
+    },
+    "8": {
+     "outage": 0.04556962025316456,
+     "false_admissions": 2,
+     "worst_corridor_outage": 0.16129032258064516
+    }
+   },
+   "audit": {
+    "risk_obs": 0.030656645569620253,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.9003408561136126,
+    "sampled_cert_rate": 0.895,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 3.906
+   },
+   "certified_frac": 0.895,
+   "deployed_corridors": 14.32,
+   "per_corridor_risk_obs": [
+    0.011896306818181818,
+    0.0,
+    0.04194972826086957,
+    0.0660400390625,
+    0.0,
+    0.04552801724137931,
+    0.06298828125,
+    0.061197916666666664,
+    0.0,
+    0.0,
+    0.05758568548387097,
+    0.0,
+    0.08854166666666667,
+    0.013671875,
+    0.0,
+    0.0009765625
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.08854166666666667,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.003125,
+     "total_probes": 2048,
+     "mean_certified": 10.073,
+     "analytic_mean_certified": 10.029911887929304,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "oracle_pooled_power": {
+   "n_admitted": 16,
+   "admitted_frac": 1.0,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 9,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 39.24,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.002531645569620253,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.041666666666666664
+    },
+    "8": {
+     "outage": 0.010126582278481013,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.06451612903225806
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0012757120253164558,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.999999999545859,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.168
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 16.0,
+   "per_corridor_risk_obs": [
+    0.006214488636363636,
+    0.0,
+    0.00016983695652173913,
+    0.0029296875,
+    0.0,
+    0.0,
+    0.0003662109375,
+    0.007975260416666666,
+    0.0,
+    0.0,
+    0.0008820564516129032,
+    0.0,
+    0.0005580357142857143,
+    0.0003551136363636364,
+    0.0,
+    0.0009765625
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.007975260416666666,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.003125,
+     "total_probes": 2048,
+     "mean_certified": 15.992,
+     "analytic_mean_certified": 15.994857531451725,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "rf_norm": {
+   "n_admitted": 4,
+   "admitted_frac": 0.25,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 9.419273793360912,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 9.81,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 4.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.0125,
+     "total_probes": 512,
+     "mean_certified": 4.0,
+     "analytic_mean_certified": 4.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  }
+ },
+ "control_g0": {
+  "oracle": {
+   "n_admitted": 14,
+   "admitted_frac": 0.875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 58,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 103.57142857142857,
+   "climb_kj": 35.56125,
+   "future": {
+    "1": {
+     "outage": 0.014326647564469915,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.06451612903225806
+    },
+    "2": {
+     "outage": 0.014326647564469915,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.05
+    },
+    "4": {
+     "outage": 0.025787965616045846,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.09523809523809523
+    },
+    "8": {
+     "outage": 0.03151862464183381,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.09523809523809523
+    }
+   },
+   "audit": {
+    "risk_obs": 0.018915651862464182,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.9887227827985888,
+    "sampled_cert_rate": 0.99,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 2.44
+   },
+   "certified_frac": 0.99,
+   "deployed_corridors": 13.86,
+   "per_corridor_risk_obs": [
+    0.002455357142857143,
+    0.01188858695652174,
+    0.0457763671875,
+    0.0,
+    0.0004040948275862069,
+    0.0263671875,
+    0.0,
+    0.0,
+    0.042212701612903226,
+    0.0,
+    0.06696428571428571,
+    0.018821022727272728,
+    0.0,
+    0.0396484375
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.06696428571428571,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.0035714285714285718,
+     "total_probes": 1792,
+     "mean_certified": 10.745,
+     "analytic_mean_certified": 10.790906190079232,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "prior_only": {
+   "n_admitted": 16,
+   "admitted_frac": 1.0,
+   "outage": 0.0810126582278481,
+   "worst_corridor_outage": 0.21739130434782608,
+   "false_admissions": 6,
+   "per_corridor_outage": [
+    0.0,
+    0.14285714285714285,
+    0.21739130434782608,
+    0.15625,
+    0.0,
+    0.13793103448275862,
+    0.0625,
+    0.16666666666666666,
+    0.13636363636363635,
+    0.0,
+    0.06451612903225806,
+    0.0,
+    0.047619047619047616,
+    0.0,
+    0.0,
+    0.05
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 29,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 39.24,
+   "future": {
+    "1": {
+     "outage": 0.08354430379746836,
+     "false_admissions": 7,
+     "worst_corridor_outage": 0.20833333333333334
+    },
+    "2": {
+     "outage": 0.08607594936708861,
+     "false_admissions": 6,
+     "worst_corridor_outage": 0.20833333333333334
+    },
+    "4": {
+     "outage": 0.09113924050632911,
+     "false_admissions": 7,
+     "worst_corridor_outage": 0.23809523809523808
+    },
+    "8": {
+     "outage": 0.10632911392405063,
+     "false_admissions": 8,
+     "worst_corridor_outage": 0.3333333333333333
+    }
+   },
+   "audit": {
+    "risk_obs": 0.08357397151898734,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.08256324947719784,
+    "sampled_cert_rate": 0.107,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 10.503
+   },
+   "certified_frac": 0.107,
+   "deployed_corridors": 1.712,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.14040178571428572,
+    0.17595108695652173,
+    0.150146484375,
+    0.0,
+    0.12931034482758622,
+    0.0479736328125,
+    0.18587239583333334,
+    0.13654119318181818,
+    0.0,
+    0.11542338709677419,
+    0.00021701388888888888,
+    0.06845238095238096,
+    0.0,
+    0.0,
+    0.073828125
+   ],
+   "false_admissions_obs": 7,
+   "worst_corridor_risk_obs": 0.18587239583333334,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.003125,
+     "total_probes": 2048,
+     "mean_certified": 6.383,
+     "analytic_mean_certified": 6.354412829978805,
+     "any_false_cert_rate": 0.002
+    }
+   }
+  },
+  "point": {
+   "n_admitted": 13,
+   "admitted_frac": 0.8125,
+   "outage": 0.04716981132075472,
+   "worst_corridor_outage": 0.13043478260869565,
+   "false_admissions": 2,
+   "per_corridor_outage": [
+    0.09090909090909091,
+    0.0,
+    0.13043478260869565,
+    0.09375,
+    0.0,
+    0.10344827586206896,
+    0.0,
+    0.0,
+    0.0967741935483871,
+    0.0,
+    0.045454545454545456,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 105,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 31.8825,
+   "future": {
+    "1": {
+     "outage": 0.05345911949685535,
+     "false_admissions": 3,
+     "worst_corridor_outage": 0.16129032258064516
+    },
+    "2": {
+     "outage": 0.05660377358490566,
+     "false_admissions": 3,
+     "worst_corridor_outage": 0.13793103448275862
+    },
+    "4": {
+     "outage": 0.06289308176100629,
+     "false_admissions": 3,
+     "worst_corridor_outage": 0.16129032258064516
+    },
+    "8": {
+     "outage": 0.0660377358490566,
+     "false_admissions": 4,
+     "worst_corridor_outage": 0.16129032258064516
+    }
+   },
+   "audit": {
+    "risk_obs": 0.058151533018867926,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.3799337861433669,
+    "sampled_cert_rate": 0.405,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 7.297
+   },
+   "certified_frac": 0.405,
+   "deployed_corridors": 5.265000000000001,
+   "per_corridor_risk_obs": [
+    0.06889204545454546,
+    0.0035714285714285713,
+    0.15166440217391305,
+    0.1124267578125,
+    0.0033967391304347825,
+    0.10250538793103449,
+    0.0,
+    0.0,
+    0.15435987903225806,
+    0.0,
+    0.04421164772727273,
+    0.0,
+    0.0478515625
+   ],
+   "false_admissions_obs": 4,
+   "worst_corridor_risk_obs": 0.15435987903225806,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.0038461538461538464,
+     "total_probes": 1664,
+     "mean_certified": 6.608,
+     "analytic_mean_certified": 6.647935232023814,
+     "any_false_cert_rate": 0.006
+    }
+   }
+  },
+  "gaussian": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 8.781786165012322,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "conformal": {
+   "n_admitted": 2,
+   "admitted_frac": 0.125,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0
+   ],
+   "margin_db": 7.695180634095737,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 4.905,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 2.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 6,
+     "delta_per_corridor": 0.025,
+     "total_probes": 256,
+     "mean_certified": 2.0,
+     "analytic_mean_certified": 2.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "conformal_norm": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 9.281301111887972,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "conformal_norm_corr": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 9.291313194557324,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "calm_pooled_power": {
+   "n_admitted": 3,
+   "admitted_frac": 0.1875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 9.281301111887972,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 7.3575,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 3.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.016666666666666666,
+     "total_probes": 384,
+     "mean_certified": 3.0,
+     "analytic_mean_certified": 3.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "point_pooled_power": {
+   "n_admitted": 13,
+   "admitted_frac": 0.8125,
+   "outage": 0.04716981132075472,
+   "worst_corridor_outage": 0.13043478260869565,
+   "false_admissions": 2,
+   "per_corridor_outage": [
+    0.09090909090909091,
+    0.0,
+    0.13043478260869565,
+    0.09375,
+    0.0,
+    0.10344827586206896,
+    0.0,
+    0.0,
+    0.0967741935483871,
+    0.0,
+    0.045454545454545456,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 27,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 31.8825,
+   "future": {
+    "1": {
+     "outage": 0.05345911949685535,
+     "false_admissions": 3,
+     "worst_corridor_outage": 0.16129032258064516
+    },
+    "2": {
+     "outage": 0.05660377358490566,
+     "false_admissions": 3,
+     "worst_corridor_outage": 0.13793103448275862
+    },
+    "4": {
+     "outage": 0.06289308176100629,
+     "false_admissions": 3,
+     "worst_corridor_outage": 0.16129032258064516
+    },
+    "8": {
+     "outage": 0.0660377358490566,
+     "false_admissions": 4,
+     "worst_corridor_outage": 0.16129032258064516
+    }
+   },
+   "audit": {
+    "risk_obs": 0.058151533018867926,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.3799337861433669,
+    "sampled_cert_rate": 0.405,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 7.297
+   },
+   "certified_frac": 0.405,
+   "deployed_corridors": 5.265000000000001,
+   "per_corridor_risk_obs": [
+    0.06889204545454546,
+    0.0035714285714285713,
+    0.15166440217391305,
+    0.1124267578125,
+    0.0033967391304347825,
+    0.10250538793103449,
+    0.0,
+    0.0,
+    0.15435987903225806,
+    0.0,
+    0.04421164772727273,
+    0.0,
+    0.0478515625
+   ],
+   "false_admissions_obs": 4,
+   "worst_corridor_risk_obs": 0.15435987903225806,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.0038461538461538464,
+     "total_probes": 1664,
+     "mean_certified": 6.608,
+     "analytic_mean_certified": 6.647935232023814,
+     "any_false_cert_rate": 0.006
+    }
+   }
+  },
+  "oracle_pooled_power": {
+   "n_admitted": 14,
+   "admitted_frac": 0.875,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 0.0,
+   "total_power_w": 7.0,
+   "iters": 49,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 103.57142857142857,
+   "climb_kj": 35.56125,
+   "future": {
+    "1": {
+     "outage": 0.014326647564469915,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.06451612903225806
+    },
+    "2": {
+     "outage": 0.014326647564469915,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.05
+    },
+    "4": {
+     "outage": 0.025787965616045846,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.09523809523809523
+    },
+    "8": {
+     "outage": 0.03151862464183381,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.09523809523809523
+    }
+   },
+   "audit": {
+    "risk_obs": 0.018915651862464182,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 0.9887227827985888,
+    "sampled_cert_rate": 0.99,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 2.44
+   },
+   "certified_frac": 0.99,
+   "deployed_corridors": 13.86,
+   "per_corridor_risk_obs": [
+    0.002455357142857143,
+    0.01188858695652174,
+    0.0457763671875,
+    0.0,
+    0.0004040948275862069,
+    0.0263671875,
+    0.0,
+    0.0,
+    0.042212701612903226,
+    0.0,
+    0.06696428571428571,
+    0.018821022727272728,
+    0.0,
+    0.0396484375
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.06696428571428571,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 4,
+     "delta_per_corridor": 0.0035714285714285718,
+     "total_probes": 1792,
+     "mean_certified": 10.745,
+     "analytic_mean_certified": 10.790906190079232,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  },
+  "rf_norm": {
+   "n_admitted": 4,
+   "admitted_frac": 0.25,
+   "outage": 0.0,
+   "worst_corridor_outage": 0.0,
+   "false_admissions": 0,
+   "per_corridor_outage": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "margin_db": 9.419273793360912,
+   "total_power_w": 7.0,
+   "iters": 3,
+   "converged": true,
+   "power_feasible": true,
+   "mean_alt_m": 100.0,
+   "climb_kj": 9.81,
+   "future": {
+    "1": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "2": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "4": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    },
+    "8": {
+     "outage": 0.0,
+     "false_admissions": 0,
+     "worst_corridor_outage": 0.0
+    }
+   },
+   "audit": {
+    "risk_obs": 0.0,
+    "n_audit": 128,
+    "delta": 0.05,
+    "k_accept": 6,
+    "analytic_cert_prob": 1.0,
+    "sampled_cert_rate": 1.0,
+    "sampled_false_cert_rate": 0.0,
+    "mean_failures": 0.0
+   },
+   "certified_frac": 1.0,
+   "deployed_corridors": 4.0,
+   "per_corridor_risk_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_admissions_obs": 0,
+   "worst_corridor_risk_obs": 0.0,
+   "per_corridor_audit": {
+    "128": {
+     "k_accept": 5,
+     "delta_per_corridor": 0.0125,
+     "total_probes": 512,
+     "mean_certified": 4.0,
+     "analytic_mean_certified": 4.0,
+     "any_false_cert_rate": 0.0
+    }
+   }
+  }
+ },
+ "score_holdout": {
+  "holdout_coverage": 0.948,
+  "target": 0.95,
+  "n_holdout": 1500,
+  "alpha": 0.1,
+  "alpha_map": 0.05,
+  "alpha_corridor": 0.05,
+  "reuse": 3,
+  "m_split_db": 7.695180634095737,
+  "m_norm": 1.7384142029716845,
+  "m_corr": 1.7878422575164046,
+  "rho_hat": 0.05904442726963743,
+  "n_calA": 1500
+ },
+ "level_coverage": {
+  "levels": [
+   0.005,
+   0.01,
+   0.02,
+   0.05,
+   0.1,
+   0.2,
+   0.35,
+   0.5
+  ],
+  "conformal_norm": [
+   0.9913333333333333,
+   0.986,
+   0.9746666666666667,
+   0.948,
+   0.9,
+   0.796,
+   0.652,
+   0.5066666666666667
+  ],
+  "gaussian": [
+   0.9846666666666667,
+   0.976,
+   0.9653333333333334,
+   0.94,
+   0.8906666666666667,
+   0.792,
+   0.6473333333333333,
+   0.48533333333333334
+  ],
+  "conformal": [
+   0.9913333333333333,
+   0.9833333333333333,
+   0.9726666666666667,
+   0.938,
+   0.8926666666666667,
+   0.7833333333333333,
+   0.664,
+   0.51
+  ],
+  "rf_norm": [
+   0.996,
+   0.9926666666666667,
+   0.988,
+   0.9533333333333334,
+   0.8993333333333333,
+   0.8053333333333333,
+   0.6633333333333333,
+   0.504
+  ],
+  "rf_norm_gauss": [
+   0.986,
+   0.974,
+   0.9593333333333334,
+   0.9246666666666666,
+   0.8626666666666667,
+   0.7673333333333333,
+   0.6313333333333333,
+   0.48933333333333334
+  ]
+ },
+ "frontier": {
+  "conformal_norm": [
+   {
+    "level": 0.005,
+    "admitted": 1,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.01,
+    "admitted": 2,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.02,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.05,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.1,
+    "admitted": 5,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.2,
+    "admitted": 10,
+    "false_admissions": 0,
+    "outage": 0.021645021645021644,
+    "worst_corridor": 0.09375
+   },
+   {
+    "level": 0.35,
+    "admitted": 16,
+    "false_admissions": 0,
+    "outage": 0.02531645569620253,
+    "worst_corridor": 0.09523809523809523
+   },
+   {
+    "level": 0.5,
+    "admitted": 16,
+    "false_admissions": 0,
+    "outage": 0.030379746835443037,
+    "worst_corridor": 0.09523809523809523
+   }
+  ],
+  "gaussian": [
+   {
+    "level": 0.005,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.01,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.02,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.05,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.1,
+    "admitted": 5,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.2,
+    "admitted": 10,
+    "false_admissions": 0,
+    "outage": 0.021645021645021644,
+    "worst_corridor": 0.09375
+   },
+   {
+    "level": 0.35,
+    "admitted": 16,
+    "false_admissions": 0,
+    "outage": 0.02278481012658228,
+    "worst_corridor": 0.09375
+   },
+   {
+    "level": 0.5,
+    "admitted": 16,
+    "false_admissions": 0,
+    "outage": 0.030379746835443037,
+    "worst_corridor": 0.09523809523809523
+   }
+  ],
+  "conformal": [
+   {
+    "level": 0.005,
+    "admitted": 0,
+    "false_admissions": 0,
+    "outage": null,
+    "worst_corridor": null
+   },
+   {
+    "level": 0.01,
+    "admitted": 1,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.02,
+    "admitted": 2,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.05,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.1,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.2,
+    "admitted": 12,
+    "false_admissions": 0,
+    "outage": 0.013559322033898305,
+    "worst_corridor": 0.09375
+   },
+   {
+    "level": 0.35,
+    "admitted": 14,
+    "false_admissions": 0,
+    "outage": 0.023391812865497075,
+    "worst_corridor": 0.09375
+   },
+   {
+    "level": 0.5,
+    "admitted": 16,
+    "false_admissions": 0,
+    "outage": 0.030379746835443037,
+    "worst_corridor": 0.09523809523809523
+   }
+  ],
+  "rf_norm": [
+   {
+    "level": 0.005,
+    "admitted": 0,
+    "false_admissions": 0,
+    "outage": null,
+    "worst_corridor": null
+   },
+   {
+    "level": 0.01,
+    "admitted": 3,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.02,
+    "admitted": 4,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.05,
+    "admitted": 4,
+    "false_admissions": 0,
+    "outage": 0.0,
+    "worst_corridor": 0.0
+   },
+   {
+    "level": 0.1,
+    "admitted": 7,
+    "false_admissions": 0,
+    "outage": 0.012658227848101266,
+    "worst_corridor": 0.09090909090909091
+   },
+   {
+    "level": 0.2,
+    "admitted": 12,
+    "false_admissions": 0,
+    "outage": 0.020761245674740483,
+    "worst_corridor": 0.09090909090909091
+   },
+   {
+    "level": 0.35,
+    "admitted": 16,
+    "false_admissions": 1,
+    "outage": 0.035443037974683546,
+    "worst_corridor": 0.10344827586206896
+   },
+   {
+    "level": 0.5,
+    "admitted": 16,
+    "false_admissions": 1,
+    "outage": 0.035443037974683546,
+    "worst_corridor": 0.10344827586206896
+   }
+  ]
+ }
+}
