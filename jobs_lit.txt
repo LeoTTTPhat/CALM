@@ -1,0 +1,9 @@
+lit --city highrise --seed 1
+lit --city highrise --seed 2
+lit --city highrise --seed 3
+lit --city midrise --seed 1
+lit --city midrise --seed 2
+lit --city midrise --seed 3
+lit --city lowrise --seed 1
+lit --city lowrise --seed 2
+lit --city lowrise --seed 3

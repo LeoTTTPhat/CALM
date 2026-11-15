@@ -1,0 +1,161 @@
+run --city highrise --seed 1
+run --city highrise --seed 2
+run --city highrise --seed 3
+run --city midrise --seed 1
+run --city midrise --seed 2
+run --city midrise --seed 3
+run --city lowrise --seed 1
+run --city lowrise --seed 2
+run --city lowrise --seed 3
+scale --seed 1
+ablation --seed 1
+ablation --seed 2
+ablation --seed 3
+transfer --fold 0 --seed 1
+transfer --fold 1 --seed 1
+transfer --fold 2 --seed 1
+budget --seed 1
+budget --seed 2
+budget --seed 3
+priorinfo2 --city highrise --seed 1
+priorinfo2 --city highrise --seed 2
+priorinfo2 --city highrise --seed 3
+anchor2 --city highrise --seed 1
+aggr --city highrise --seed 1
+anchor2 --city highrise --seed 2
+aggr --city highrise --seed 2
+anchor2 --city highrise --seed 3
+aggr --city highrise --seed 3
+anchor2 --city midrise --seed 1
+aggr --city midrise --seed 1
+anchor2 --city lowrise --seed 1
+aggr --city lowrise --seed 1
+anchor --seed 1
+anchor --seed 2
+anchor --seed 3
+theory --seed 1
+theory --seed 2
+mismatch --variant nominal --seed 1
+mismatch --variant nominal --seed 2
+mismatch --variant nominal --seed 3
+mismatch --variant ground_refl --seed 1
+mismatch --variant ground_refl --seed 2
+mismatch --variant ground_refl --seed 3
+mismatch --variant multipath --seed 1
+mismatch --variant multipath --seed 2
+mismatch --variant multipath --seed 3
+mismatch --variant xcorr05 --seed 1
+mismatch --variant xcorr05 --seed 2
+mismatch --variant xcorr05 --seed 3
+mismatch --variant xcorr08 --seed 1
+mismatch --variant xcorr08 --seed 2
+mismatch --variant xcorr08 --seed 3
+mismatch --variant vcorr20 --seed 1
+mismatch --variant vcorr20 --seed 2
+mismatch --variant vcorr20 --seed 3
+mismatch --variant tilt_err1 --seed 1
+mismatch --variant tilt_err1 --seed 2
+mismatch --variant tilt_err1 --seed 3
+mismatch --variant tilt_err3 --seed 1
+mismatch --variant tilt_err3 --seed 2
+mismatch --variant tilt_err3 --seed 3
+mismatch --variant ant_nv4 --seed 1
+mismatch --variant ant_nv4 --seed 2
+mismatch --variant ant_nv4 --seed 3
+mismatch --variant ant_nv16 --seed 1
+mismatch --variant ant_nv16 --seed 2
+mismatch --variant ant_nv16 --seed 3
+mismatch --variant ant_tilt0 --seed 1
+mismatch --variant ant_tilt0 --seed 2
+mismatch --variant ant_tilt0 --seed 3
+mismatch --variant ant_tilt12 --seed 1
+mismatch --variant ant_tilt12 --seed 2
+mismatch --variant ant_tilt12 --seed 3
+mismatch --variant combined --seed 1
+mismatch --variant combined --seed 2
+mismatch --variant combined --seed 3
+geom --group density --idx 0 --seed 1
+geom --group density --idx 0 --seed 2
+geom --group density --idx 0 --seed 3
+geom --group density --idx 1 --seed 1
+geom --group density --idx 1 --seed 2
+geom --group density --idx 1 --seed 3
+geom --group density --idx 2 --seed 1
+geom --group density --idx 2 --seed 2
+geom --group density --idx 2 --seed 3
+geom --group density --idx 3 --seed 1
+geom --group density --idx 3 --seed 2
+geom --group density --idx 3 --seed 3
+geom --group density --idx 4 --seed 1
+geom --group density --idx 4 --seed 2
+geom --group density --idx 4 --seed 3
+geom --group traj --idx 0 --seed 1
+geom --group traj --idx 0 --seed 2
+geom --group traj --idx 0 --seed 3
+geom --group traj --idx 1 --seed 1
+geom --group traj --idx 1 --seed 2
+geom --group traj --idx 1 --seed 3
+geom --group traj --idx 2 --seed 1
+geom --group traj --idx 2 --seed 2
+geom --group traj --idx 2 --seed 3
+geom --group traj --idx 3 --seed 1
+geom --group traj --idx 3 --seed 2
+geom --group traj --idx 3 --seed 3
+geom --group layers --idx 0 --seed 1
+geom --group layers --idx 0 --seed 2
+geom --group layers --idx 0 --seed 3
+geom --group layers --idx 1 --seed 1
+geom --group layers --idx 1 --seed 2
+geom --group layers --idx 1 --seed 3
+geom --group layers --idx 2 --seed 1
+geom --group layers --idx 2 --seed 2
+geom --group layers --idx 2 --seed 3
+geom --group layers --idx 3 --seed 1
+geom --group layers --idx 3 --seed 2
+geom --group layers --idx 3 --seed 3
+geom --group layers --idx 4 --seed 1
+geom --group layers --idx 4 --seed 2
+geom --group layers --idx 4 --seed 3
+geom --group metric --idx 0 --seed 1
+geom --group metric --idx 0 --seed 2
+geom --group metric --idx 0 --seed 3
+geom --group metric --idx 1 --seed 1
+geom --group metric --idx 1 --seed 2
+geom --group metric --idx 1 --seed 3
+geom --group metric --idx 2 --seed 1
+geom --group metric --idx 2 --seed 2
+geom --group metric --idx 2 --seed 3
+geom --group metric --idx 3 --seed 1
+geom --group metric --idx 3 --seed 2
+geom --group metric --idx 3 --seed 3
+geom --group metric --idx 4 --seed 1
+geom --group metric --idx 4 --seed 2
+geom --group metric --idx 4 --seed 3
+geom --group k --idx 0 --seed 1
+geom --group k --idx 0 --seed 2
+geom --group k --idx 0 --seed 3
+geom --group k --idx 1 --seed 1
+geom --group k --idx 1 --seed 2
+geom --group k --idx 1 --seed 3
+geom --group k --idx 2 --seed 1
+geom --group k --idx 2 --seed 2
+geom --group k --idx 2 --seed 3
+geom --group k --idx 3 --seed 1
+geom --group k --idx 3 --seed 2
+geom --group k --idx 3 --seed 3
+geom --group k --idx 4 --seed 1
+geom --group k --idx 4 --seed 2
+geom --group k --idx 4 --seed 3
+scalecap --seed 1
+drift --city highrise --seed 1
+dropout --seed 1
+density --seed 1
+extval --seed 1
+altdiag --city highrise --seed 1
+auditstress --seed 1
+shiftdiag --fold 0 --seed 1
+shiftdiag --fold 1 --seed 1
+shiftdiag --fold 2 --seed 1
+pricediag --city highrise --seed 1
+pricediag --city midrise --seed 1
+pricediag --city lowrise --seed 1

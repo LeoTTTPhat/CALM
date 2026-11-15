@@ -1,0 +1,6 @@
+rt --variant lattice --seed 1 --no-smooth
+rt --variant lattice --seed 2 --no-smooth
+rt --variant lattice --seed 3 --no-smooth
+rt --variant irregular --seed 1 --no-smooth
+rt --variant irregular --seed 2 --no-smooth
+rt --variant irregular --seed 3 --no-smooth
