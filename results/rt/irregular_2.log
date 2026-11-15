@@ -1,0 +1,10 @@
+[rt] city=irregular seed=2 summary={"realised_alpha": 0.351, "n_buildings": 436, "p95_building_height": 62.553, "max_building_height": 220.0, "mean_bs_height": 70.167}
+[rt] scene: 436 buildings (polygons), 7 tx, load 0.1s, pattern max err 2.41e-02 dB
+[rt] h=100 m: 4 x ~2.50e+07 rays/tx, 79.6s, zero cells 0.004
+[rt] h=150 m: 4 x ~2.50e+07 rays/tx, 77.0s, zero cells 0.003
+[rt] h=200 m: 4 x ~2.50e+07 rays/tx, 77.3s, zero cells 0.001
+[rt] h=250 m: 4 x ~2.50e+07 rays/tx, 76.2s, zero cells 0.000
+[rt] h=300 m: 4 x ~2.50e+07 rays/tx, 76.9s, zero cells 0.000
+[rt] saved results/rt/irregular_2.npz  PL_rt (7, 5, 100, 100)  runtime 388.0s  fill 0.0015 (outdoor 0.0000)
+[rt] LoS fraction (outdoor) 0.885; LoS cells PL_rt-(FSPL-G): median -1.47 dB IQR 3.72; vs TR36.777 LoS: median -2.35 dB; MC s.e. (LoS) median 0.153 dB
+[rt] RT - knife-edge(pl_det): all median -2.30 (IQR 3.75); NLoS median -0.13

@@ -1,0 +1,10 @@
+[rt] city=highrise seed=3 summary={"realised_alpha": 0.518, "p95_building_height": 99.806, "max_building_height": 203.447, "mean_bs_height": 37.294}
+[rt] scene: 256 buildings (raster_rectangles), 7 tx, load 0.0s, pattern max err 2.41e-02 dB
+[rt] h=100 m: 4 x ~2.50e+07 rays/tx, 85.7s, zero cells 0.022
+[rt] h=150 m: 4 x ~2.50e+07 rays/tx, 84.3s, zero cells 0.002
+[rt] h=200 m: 4 x ~2.50e+07 rays/tx, 82.7s, zero cells 0.002
+[rt] h=250 m: 4 x ~2.50e+07 rays/tx, 81.8s, zero cells 0.000
+[rt] h=300 m: 4 x ~2.50e+07 rays/tx, 80.1s, zero cells 0.000
+[rt] saved results/rt/highrise_3.npz  PL_rt (7, 5, 100, 100)  runtime 415.6s  fill 0.0050 (outdoor 0.0005)
+[rt] LoS fraction (outdoor) 0.600; LoS cells PL_rt-(FSPL-G): median -2.69 dB IQR 4.93; vs TR36.777 LoS: median -3.53 dB; MC s.e. (LoS) median 0.184 dB
+[rt] RT - knife-edge(pl_det): all median -3.40 (IQR 5.88); NLoS median -2.64
