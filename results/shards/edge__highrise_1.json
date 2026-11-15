@@ -1,0 +1,23 @@
+{
+ "n_queries": 4096,
+ "threads": 1,
+ "reps": 30,
+ "fp32": {
+  "latency_ms": 36.27627104287967,
+  "us_per_query": 8.856511485078045,
+  "size_mb": 0.170997,
+  "rmse": 3.520232140254005,
+  "energy_uJ_per_query": 44.28255742539022
+ },
+ "int8": {
+  "latency_ms": 59.6704165218398,
+  "us_per_query": 14.567972783652294,
+  "size_mb": 0.071093,
+  "rmse": 3.6067057324475336,
+  "energy_uJ_per_query": 72.83986391826147
+ },
+ "note": "energy estimated as measured latency x a nominal 5 W SoC envelope",
+ "engine": "qnnpack",
+ "n_params": 39322,
+ "speedup": 0.6079439889547662
+}

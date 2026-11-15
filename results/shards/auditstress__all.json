@@ -1,0 +1,247 @@
+{
+ "rows": [
+  {
+   "city": "highrise",
+   "seed": 1,
+   "risk": 0.12151898734177215,
+   "k_accept": 6,
+   "false_cert_iid": 0.0037,
+   "false_cert_segments": 0.1558,
+   "var_ratio": 2.9645881721458585
+  },
+  {
+   "city": "highrise",
+   "seed": 1,
+   "risk": 0.1518987341772152,
+   "k_accept": 6,
+   "false_cert_iid": 0.0001,
+   "false_cert_segments": 0.1127,
+   "var_ratio": 3.933691866095433
+  },
+  {
+   "city": "highrise",
+   "seed": 1,
+   "risk": 0.2,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.0667,
+   "var_ratio": 5.979539410564419
+  },
+  {
+   "city": "highrise",
+   "seed": 2,
+   "risk": 0.12151898734177215,
+   "k_accept": 6,
+   "false_cert_iid": 0.00275,
+   "false_cert_segments": 0.03915,
+   "var_ratio": 0.8296717904320734
+  },
+  {
+   "city": "highrise",
+   "seed": 2,
+   "risk": 0.1518987341772152,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.01195,
+   "var_ratio": 0.9935016851271825
+  },
+  {
+   "city": "highrise",
+   "seed": 2,
+   "risk": 0.2,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.00165,
+   "var_ratio": 3.0158339264674914
+  },
+  {
+   "city": "highrise",
+   "seed": 3,
+   "risk": 0.12098765432098765,
+   "k_accept": 6,
+   "false_cert_iid": 0.00385,
+   "false_cert_segments": 0.15135,
+   "var_ratio": 3.5137738993971914
+  },
+  {
+   "city": "highrise",
+   "seed": 3,
+   "risk": 0.1506172839506173,
+   "k_accept": 6,
+   "false_cert_iid": 0.00025,
+   "false_cert_segments": 0.07815,
+   "var_ratio": 3.3193010446545794
+  },
+  {
+   "city": "highrise",
+   "seed": 3,
+   "risk": 0.20246913580246914,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.0284,
+   "var_ratio": 3.949568977776682
+  },
+  {
+   "city": "midrise",
+   "seed": 1,
+   "risk": 0.12151898734177215,
+   "k_accept": 6,
+   "false_cert_iid": 0.00445,
+   "false_cert_segments": 0.1295,
+   "var_ratio": 5.577642428386526
+  },
+  {
+   "city": "midrise",
+   "seed": 1,
+   "risk": 0.1518987341772152,
+   "k_accept": 6,
+   "false_cert_iid": 0.00025,
+   "false_cert_segments": 0.04595,
+   "var_ratio": 4.25902978824881
+  },
+  {
+   "city": "midrise",
+   "seed": 1,
+   "risk": 0.2,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.0099,
+   "var_ratio": 3.9397484701623267
+  },
+  {
+   "city": "midrise",
+   "seed": 2,
+   "risk": 0.12151898734177215,
+   "k_accept": 6,
+   "false_cert_iid": 0.00365,
+   "false_cert_segments": 0.06485,
+   "var_ratio": 4.62400541561375
+  },
+  {
+   "city": "midrise",
+   "seed": 2,
+   "risk": 0.1518987341772152,
+   "k_accept": 6,
+   "false_cert_iid": 5e-05,
+   "false_cert_segments": 0.03065,
+   "var_ratio": 4.2432776524559594
+  },
+  {
+   "city": "midrise",
+   "seed": 2,
+   "risk": 0.2,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.0072,
+   "var_ratio": 5.113302716563546
+  },
+  {
+   "city": "midrise",
+   "seed": 3,
+   "risk": 0.12098765432098765,
+   "k_accept": 6,
+   "false_cert_iid": 0.00315,
+   "false_cert_segments": 0.04135,
+   "var_ratio": 3.3947813743500634
+  },
+  {
+   "city": "midrise",
+   "seed": 3,
+   "risk": 0.1506172839506173,
+   "k_accept": 6,
+   "false_cert_iid": 0.0002,
+   "false_cert_segments": 0.00665,
+   "var_ratio": 3.2818234253074343
+  },
+  {
+   "city": "midrise",
+   "seed": 3,
+   "risk": 0.2,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.0016,
+   "var_ratio": 3.7097486805637567
+  },
+  {
+   "city": "lowrise",
+   "seed": 1,
+   "risk": 0.12151898734177215,
+   "k_accept": 6,
+   "false_cert_iid": 0.00265,
+   "false_cert_segments": 0.0649,
+   "var_ratio": 0.9578478752756675
+  },
+  {
+   "city": "lowrise",
+   "seed": 1,
+   "risk": 0.1518987341772152,
+   "k_accept": 6,
+   "false_cert_iid": 0.0002,
+   "false_cert_segments": 0.0268,
+   "var_ratio": 1.5291204093157622
+  },
+  {
+   "city": "lowrise",
+   "seed": 1,
+   "risk": 0.2,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.00455,
+   "var_ratio": 1.7150609281778466
+  },
+  {
+   "city": "lowrise",
+   "seed": 2,
+   "risk": 0.12151898734177215,
+   "k_accept": 6,
+   "false_cert_iid": 0.00305,
+   "false_cert_segments": 0.07935,
+   "var_ratio": 4.532873795754347
+  },
+  {
+   "city": "lowrise",
+   "seed": 2,
+   "risk": 0.1518987341772152,
+   "k_accept": 6,
+   "false_cert_iid": 5e-05,
+   "false_cert_segments": 0.0464,
+   "var_ratio": 4.898190982350242
+  },
+  {
+   "city": "lowrise",
+   "seed": 2,
+   "risk": 0.2,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.0051,
+   "var_ratio": 3.6763353335045696
+  },
+  {
+   "city": "lowrise",
+   "seed": 3,
+   "risk": 0.12098765432098765,
+   "k_accept": 6,
+   "false_cert_iid": 0.00405,
+   "false_cert_segments": 0.048,
+   "var_ratio": 1.5261368554957007
+  },
+  {
+   "city": "lowrise",
+   "seed": 3,
+   "risk": 0.1506172839506173,
+   "k_accept": 6,
+   "false_cert_iid": 0.00015,
+   "false_cert_segments": 0.0155,
+   "var_ratio": 1.7746497289515109
+  },
+  {
+   "city": "lowrise",
+   "seed": 3,
+   "risk": 0.2,
+   "k_accept": 6,
+   "false_cert_iid": 0.0,
+   "false_cert_segments": 0.00125,
+   "var_ratio": 4.055722510041645
+  }
+ ]
+}

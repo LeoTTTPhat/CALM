@@ -1,0 +1,105 @@
+{
+ "n_audit": 128,
+ "delta": 0.05,
+ "alpha": 0.1,
+ "reps": 10000,
+ "k_accept": 6,
+ "rows": [
+  {
+   "city": "highrise",
+   "seed": 1,
+   "n_audit": 128,
+   "delta": 0.05,
+   "alpha": 0.1,
+   "candidate_outage": 0.0,
+   "k_accept": 6,
+   "exact_certification_probability": 1.0,
+   "monte_carlo_certification_probability": 1.0,
+   "expected_failures": 0.0
+  },
+  {
+   "city": "highrise",
+   "seed": 3,
+   "n_audit": 128,
+   "delta": 0.05,
+   "alpha": 0.1,
+   "candidate_outage": 0.0,
+   "k_accept": 6,
+   "exact_certification_probability": 1.0,
+   "monte_carlo_certification_probability": 1.0,
+   "expected_failures": 0.0
+  },
+  {
+   "city": "lowrise",
+   "seed": 1,
+   "n_audit": 128,
+   "delta": 0.05,
+   "alpha": 0.1,
+   "candidate_outage": 0.0,
+   "k_accept": 6,
+   "exact_certification_probability": 1.0,
+   "monte_carlo_certification_probability": 1.0,
+   "expected_failures": 0.0
+  },
+  {
+   "city": "lowrise",
+   "seed": 2,
+   "n_audit": 128,
+   "delta": 0.05,
+   "alpha": 0.1,
+   "candidate_outage": 0.0,
+   "k_accept": 6,
+   "exact_certification_probability": 1.0,
+   "monte_carlo_certification_probability": 1.0,
+   "expected_failures": 0.0
+  },
+  {
+   "city": "lowrise",
+   "seed": 3,
+   "n_audit": 128,
+   "delta": 0.05,
+   "alpha": 0.1,
+   "candidate_outage": 0.0,
+   "k_accept": 6,
+   "exact_certification_probability": 1.0,
+   "monte_carlo_certification_probability": 1.0,
+   "expected_failures": 0.0
+  },
+  {
+   "city": "midrise",
+   "seed": 1,
+   "n_audit": 128,
+   "delta": 0.05,
+   "alpha": 0.1,
+   "candidate_outage": 0.0,
+   "k_accept": 6,
+   "exact_certification_probability": 1.0,
+   "monte_carlo_certification_probability": 1.0,
+   "expected_failures": 0.0
+  },
+  {
+   "city": "midrise",
+   "seed": 2,
+   "n_audit": 128,
+   "delta": 0.05,
+   "alpha": 0.1,
+   "candidate_outage": 0.0,
+   "k_accept": 6,
+   "exact_certification_probability": 1.0,
+   "monte_carlo_certification_probability": 1.0,
+   "expected_failures": 0.0
+  },
+  {
+   "city": "midrise",
+   "seed": 3,
+   "n_audit": 128,
+   "delta": 0.05,
+   "alpha": 0.1,
+   "candidate_outage": 0.0,
+   "k_accept": 6,
+   "exact_certification_probability": 1.0,
+   "monte_carlo_certification_probability": 1.0,
+   "expected_failures": 0.0
+  }
+ ]
+}
